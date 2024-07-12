@@ -33,7 +33,7 @@ const Notes = (props) => {
       id: currentNote._id,
       etitle: currentNote.title, 
       edescription: currentNote.description, 
-      etag: currentNote.tag, 
+      etag: currentNote.tag,
     });
   };
   const handleClick = (e) => {
@@ -78,7 +78,7 @@ const Notes = (props) => {
               <form className="my-3">
                 <div className="mb-3">
                   <label htmlFor="etitle" className="form-label">
-                    etitle
+                    Title
                   </label>
                   <input
                     type="text"
