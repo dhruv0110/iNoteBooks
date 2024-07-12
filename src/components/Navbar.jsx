@@ -54,12 +54,12 @@ const Navbar = () => {
                 </Link>
               </li>
             </ul>
-            {(localStorage.getItem('token'))?<Link className="nav-link mx-4" style={{color:'white',fontSize:'20px'}} to="/info"><i class="fa-solid fa-user"></i></Link>:""}
             {localStorage.getItem("token") ? (
-              <div className="d-flex align-items-center">
+              <div className="d-flex align-items-center" style={{display:'flex', justifyContent:'space-between'}}>
                 <button className="btn btn-primary" onClick={logOut}>
                   Logout
                 </button>
+                {(localStorage.getItem('token'))?<Link className="nav-link mx-4" style={{color:'white',fontSize:'20px'}} to="/info"><i className="fa-solid fa-user"></i></Link>:""}
               </div>
               
             ) : (

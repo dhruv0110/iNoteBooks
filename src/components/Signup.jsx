@@ -50,8 +50,9 @@ const Signup = (props) => {
 
   return (
     <div className='container my-4'>
+      <h1>Sign Up</h1>
       <form onSubmit={handleSubmit}>
-        <div className="mb-3">
+        <div className="mb-3 my-4">
           <label htmlFor="name" className="form-label">Name</label>
           <input type="text" className="form-control" id="name" name='name' onChange={onChange} aria-describedby="emailHelp" />
         </div>
